@@ -1,0 +1,14 @@
+$br: "border-radius";
+
+@mixin vals ($px) {
+    -webkit-#{$br}: $px;
+    -webkit-#{$br}: $px;
+    #{$br}: $px;
+}
+
+.header {
+    @include vals(5px);
+}
+.footer {
+    @include vals(10px);
+}

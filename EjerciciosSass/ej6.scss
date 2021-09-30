@@ -1,0 +1,11 @@
+borderPadded {
+    border-radius: 5px;
+    padding: 5px 20px;
+} 
+
+header, .content {@extend borderPadded};
+
+.footer {
+    @extend borderPadded;
+    a{@extend borderPadded}
+}
