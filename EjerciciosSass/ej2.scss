@@ -1,0 +1,32 @@
+$color1: #095169;
+$color2: #30162B;
+$blanco: #fff;
+
+@mixin colHov ($cc, $ch) {
+    color: $cc;
+    &:hover {color: $ch;}
+}
+
+@mixin bgCl ($bc, $cc) {
+    background-color: $bc;
+    color: $cc;
+}
+
+header {
+    background-color: #531946;
+    a {@include colHov($blanco,$color1);}
+
+    footer {
+        @include bgCl($color1, $blanco);
+        a {@include colHov($color1, $blanco);}
+    }
+
+    feature {
+        a{
+            background-color: #30162B;
+            @include colHov($blanco, $blanco);
+        }
+    }
+
+    content {@include bgCl($blanco, #222);}
+}

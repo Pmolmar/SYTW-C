@@ -1,0 +1,44 @@
+$blanco: #fff;
+$color1: #095169;
+$color2: #531946;
+
+.bordePadded {
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.classbg {
+    background-color: #30162B;
+    color: $blanco;
+    @extend .bordePadded;
+}
+
+@mixin  colHov ($cc, $ch) {
+    color: $cc;
+    &:hover {color: $cv;}
+}
+
+header {
+    background-color: $color2;
+    @extend .bordePadded;
+    
+    a {@include colHov($blanco, $color1)}
+
+    footer {
+        @extend .classbg;
+        a {@include colHov($color1, $blanco);}
+    }
+
+    feature {
+        a{
+            @extend .classbg;
+            &:hover {color: $color2;}
+        }
+    }
+
+    content {
+        background-color: $blanco;
+        color: #222;
+        @extend .bordePadded
+    }
+}
