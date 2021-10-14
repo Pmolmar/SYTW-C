@@ -1,0 +1,25 @@
+{
+  "name": "Web",
+  "description": "Ejercicios de automatizacion",
+  "main": "index.html",
+  "authors": [
+    "Pablo Molina Martinez"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Sass",
+    "Automatization",
+    "Bower",
+    "Yeoman",
+    "Gulp"
+  ],
+  "homepage": "https://github.com/Pmolmar/SYTW-C",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
