@@ -8,4 +8,5 @@ Elaces a las diferentes pracicas con sus sub-apartados.
 ### Web Components
 ` En progreso ...`
 
-![gato](https://cataas.com/cat)
+
+<img src="https://cataas.com/cat/says/Isa%20estoy%20trabajando%20jeje" alt="drawing" style="width:400px;"/>
