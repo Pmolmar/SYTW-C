@@ -20,6 +20,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const isTest = process.env.NODE_ENV === 'test';
 const isDev = !isProd && !isTest;
 
+
 function styles() {
   return src('app/styles/*.scss', {
     sourcemaps: !isProd,
@@ -33,7 +34,7 @@ function styles() {
     .pipe($.postcss([
       autoprefixer()
     ]))
-    .pipe(dest('styles/styles', {
+    .pipe(dest('app/styles', {
       sourcemaps: !isProd,
     }))
     .pipe(server.reload({stream: true})
@@ -158,9 +159,14 @@ const build = series(
 function startAppServer() {
   server.init({
     notify: false,
-    port,
+    port:8080,
     server: {
       baseDir: ['.tmp', 'app'],
+      middleware: function (req, res, next) {
+        res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        res.setHeader("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");
+        next();
+      },
       routes: {
         '/node_modules': 'node_modules'
       }
