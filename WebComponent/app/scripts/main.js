@@ -9,7 +9,7 @@ class MyTag extends HTMLElement{
         var shadow = this.attachShadow({mode: 'open'});
         var div = document.createElement('div')
         var p = document.createElement('p')
-        p.innerText= "hola"
+        p.innerText= "Elemento ciclo vida CONSOLA"
         div.appendChild(p)
        
         shadow.appendChild(div)
@@ -37,17 +37,17 @@ const add = document.querySelector('.add');
 const update = document.querySelector('.update');
 const remove = document.querySelector('.remove');
 
-let myTag
-
 add.onclick = () => {
-    myTag = document.createElement('my-tag');
-    document.body.appendChild(myTag);
+    document.body.appendChild(document.createElement('my-tag'));
 }
 
 update.onclick = () => {
-    myTag.setAttribute('style', 'color: red')
+    let l = document.getElementsByTagName("my-tag").length
+    document.getElementsByTagName("my-tag")[l-1].setAttribute('style', 'color: red')
 }
 
 remove.onclick = () => {
-    document.body.removeChild(myTag)
+    let l = document.getElementsByTagName("my-tag").length
+    document.body.removeChild(document.getElementsByTagName("my-tag")[l-1])
+
 }
