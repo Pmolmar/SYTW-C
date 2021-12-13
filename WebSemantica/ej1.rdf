@@ -1,0 +1,22 @@
+@prefix cty: <htt://cities.mydomain.org#> .
+@prefix sta: <htt://states.mydomain.org#> .
+@prefix tem: <htt://teams.mydomain.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+cty:Londres a  cty:cityEn .
+cty:Liverpoll a cty:cityEn .
+cty:Birmingan a cty:cityEn .
+ 
+cty:cityEn a sta:Inglaterra .
+
+sta:Inglaterra a sta:ReinoUnido .
+
+tem:Arseal a cty:Londres .
+tem:Chelsea a cty:Londres .
+tem:Tottenham a cty:Londres .
+
+tem:Birmingham a cty:Birmingham .
+tem:Aston_Villa a cty:Birmingham .
+
+tem:Liverpool a cty:Liverpoll .
+tem:Everton a cty:Liverpoll .

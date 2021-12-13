@@ -1,0 +1,16 @@
+@prefix foaf: <http://xmlns.com/foaf/spec/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+foaf:pedro a foaf:person ;
+    foaf:knows foaf:carlos ;
+    foaf:age foaf:28 .
+
+foaf:maria a foaf:person ;
+    foaf:knows foaf:carlos ;
+    foaf:age foaf:22 .
+
+
+foaf:carlos a foaf:person ; 
+    foaf:knows foaf:maria ;
+    foaf:knows foaf:pedro ;
+    foaf:age foaf:20 .
