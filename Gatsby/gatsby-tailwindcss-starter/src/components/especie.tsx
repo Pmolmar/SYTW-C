@@ -1,18 +1,14 @@
 import React from "react"
 import { Link } from 'gatsby'
 
-function GameComponent({ name, genre, imageUrl, year, company }) {
+function EspecieComponent({ name, titulo, body }) {
     return (
         <div>
-            <img src={imageUrl}></img>
-            <div>
-                <p>Nombre: {name}</p>
-                <p>Genero: {genre}</p>
-                <p>Año de salida: {year}</p>
-                <p>Desarrollaroda: {company}</p>
-            </div>
+            <p>{titulo}</p>
+            <p>Nombre: {name}</p>
+            <p>Contenido: {body}</p>
         </div>
     )
 }
 
-export default GameComponent;
+export default EspecieComponent;
