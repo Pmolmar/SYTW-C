@@ -8,4 +8,4 @@ Elaces a las diferentes pracicas con sus sub-apartados.
 ### [Web Components](https://github.com/Pmolmar/SYTW-C/tree/main/WebComponent)
 - Web Components [link](https://github.com/Pmolmar/SYTW-C/tree/main/WebComponent)
 ### Gatsby
-`En proceso ...`
+- Gatsbi 1-2  [link](https://github.com/Pmolmar/SYTW-C/tree/main/Gatsby/gatsby-tailwindcss-starter)
